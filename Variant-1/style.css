@@ -301,7 +301,7 @@
   
   @media (max-width: 390px) {
     .container {
-      height: 100vh;
+      height: auto;
     }
   }
   
