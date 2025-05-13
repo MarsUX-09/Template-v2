@@ -1,0 +1,488 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 770px;
+    background-color: #4f9d9d;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .header-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+    padding: 12px 16px;
+    width: 100%;
+    background-color: #167c7a;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+  }
+  
+  .logo {
+    width: 164px;
+    height: 43.3px;
+    object-fit: contain;
+  }
+  
+  .banner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 13px 0;
+    background-color: #b9d4d3;
+    border-radius: 28px;
+    margin: 0 -95.5px;
+    white-space: nowrap;
+  }
+  
+  .banner span {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    font-size: 8.5px;
+    letter-spacing: 1.35px;
+    line-height: 24.1px;
+    color: #1a2e35;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    position: absolute;
+    width: 100%;
+    height: 612px;
+    top: 109px;
+    left: 0px;
+  }
+  
+  /* Product features */
+  .product-features {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 187px;
+    z-index: 2;
+    margin: 0 auto;
+    text-align: center;
+    left: 11%;
+  }
+  
+  .feature {
+    position: absolute;
+  }
+  
+  .feature-1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .feature-2 {
+    top: 0.5px;
+    left: 262px;
+  }
+  
+  .feature-3 {
+    top: 97px;
+    left: 3px;
+  }
+  
+  .feature-4 {
+    top: 97px;
+    left: 262px;
+  }
+  
+  .feature-text {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    color: #0b3f1f;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    line-height: 14px;
+    white-space: pre-line;
+  }
+  
+  .feature-icon {
+    width: 34px;
+    height: 37px;
+    position: absolute;
+    top: 148%;
+    left: 21%;
+  }
+  
+  /* Product content */
+  .product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  /* Reviews section */
+  .reviews {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 15px;
+    background-color: rgba(222, 222, 222, 0.15);
+    border-radius: 84px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .stars {
+    display: flex;
+    color: #eace08;
+    gap: 2px;
+  }
+  
+  .star {
+    font-size: 16px;
+  }
+  
+  .review-count {
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 8px;
+  }
+  
+  /* Headline */
+  .headline {
+    font-family: 'Orelega One', cursive;
+    font-size: 36.8px;
+    color: white;
+    text-align: center;
+    line-height: 34.7px;
+    width: 317px;
+    margin: 5px 0;
+    font-weight: 200;
+  }
+  
+  .headline .underline {
+    text-decoration: underline;
+  }
+  
+  /* Product image */
+  .product-image {
+    width: 280px;
+    height: 274px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  /* Product details */
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .product-description {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 19.8px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  .price-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .current-price {
+    font-family: 'Orelega One', cursive;
+    font-size: 36.6px;
+    color: white;
+    letter-spacing: -1px;
+    line-height: 30px;
+    font-weight: 200;
+  }
+  
+  .original-price {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: 400;
+    color: #dedede;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: line-through;
+  }
+  
+  .savings-badge {
+    display: inline-flex;
+    padding: 3px 13px;
+    background-color: #e5f5ec;
+    border-radius: 10454px;
+    color: #ff7cae;
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    font-size: 13.5px;
+    line-height: 20.1px;
+  }
+  
+  /* Call to action */
+  .cta-section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .shop-now-button {
+    width: 100%;
+    max-width: 316px;
+    background-color: #ff7cae;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(252, 74, 77, 0.15);
+    transition: background-color 0.3s;
+    opacity: 0.9;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #ff5a9a;
+  }
+  
+  .button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .cart-icon {
+    width: 16px;
+    height: 18px;
+  }
+  
+  .button-text span {
+    font-family: 'Orelega One', cursive;
+    font-size: 26px;
+    color: white;
+    line-height: normal;
+  }
+  
+  .button-subtext {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    font-size: 11.5px;
+    color: white;
+    letter-spacing: 1.83px;
+    line-height: 20.1px;
+    margin-top: -1px;
+  }
+  
+  /* Shipping information */
+  .shipping-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+    width: 100%;
+  }
+  
+  .shipping-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10.45px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .free-shipping,
+  .delivery-time {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1px 0px;
+  }
+  
+  .free-shipping {
+    width: 95px;
+    height: 28px;
+  }
+  
+  .delivery-time {
+    width: 180px;
+    height: 28px;
+  }
+  
+  .shipping-icon,
+  .delivery-icon {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .shipping-info span {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    line-height: 16.4px;
+  }
+  
+  .shipping-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .shipping-text p {
+    font-family: 'Oriya Sangam MN', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    line-height: 16.4px;
+    margin: 2px 0;
+    text-align: center;
+  }
+  
+  /* Leaf decorations */
+  .leaves {
+    position: absolute;
+    width: 444px;
+    height: 433px;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .leaf {
+    position: absolute;
+  }
+  
+  .leaf-1 {
+    width: 52px;
+    height: 61px;
+    top: 40px;
+    left: 32px;
+  }
+  
+  .leaf-2 {
+    width: 74px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
+  
+  .leaf-3 {
+    width: 52px;
+    height: 61px;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .leaf-4 {
+    width: 74px;
+    height: 61px;
+    top: 260px;
+    left: 340px;
+  }
+  
+  .leaf-5 {
+    width: 42px;
+    height: 61px;
+    top: 372px;
+    left: 32px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 390px) {
+    .container {
+      width: 100%;
+      min-height: 745px;
+    }
+  
+    .header-wrapper {
+      width: 100%;
+    }
+  
+    .banner {
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+      border-radius: 0;
+    }
+  
+    .main-content {
+      width: 100%;
+      left: 0;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  
+    .product-content {
+      width: 100%;
+      left: 0;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  
+    .product-features {
+      left: 16px;
+      width: calc(100% - 32px);
+    }
+  
+    .feature-2 {
+      left: calc(100% - 87px);
+    }
+  
+    .feature-4 {
+      left: calc(100% - 87px);
+    }
+  
+    .leaves {
+      width: 100%;
+    }
+  
+    .leaf-4 {
+      left: calc(100% - 104px);
+    }
+  }
